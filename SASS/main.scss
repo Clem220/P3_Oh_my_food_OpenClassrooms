@@ -1,0 +1,49 @@
+/* test */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        &__logo{
+            height: 50%;
+        }
+        nav{
+            display: flex;
+            height: 50%;
+            width: 100%;
+            background-color: #F2F2F2F2;
+        }
+}
+
+.function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__element{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 25px 25px;
+        padding: 0px 10px;
+        margin: 2%;
+        }
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        &__element{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 25px 25px;
+        margin: 4%;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 25px 25px 0px 0px;
+        }
+    }
+}

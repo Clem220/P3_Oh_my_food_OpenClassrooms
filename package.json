@@ -1,0 +1,19 @@
+{
+  "name": "clementvermeulen_3_13012022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clem220/ClementVermeulen_3_13012022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clem220/ClementVermeulen_3_13012022/issues"
+  },
+  "homepage": "https://github.com/Clem220/ClementVermeulen_3_13012022#readme"
+}
