@@ -3,5 +3,24 @@
 $color__primary: #9356DC;
 $color__secondary: #FF79DA;
 $color__tertiary: #99E2D0;
-$color__footer: #282828
+$color__description: #FFFFFF;
+$color__footer: #282828;
+
+/* typo */
+
+$typo__text: "Roboto";
+
+@mixin typo {
+    font-family: $typo__text,Arial, Helvetica, sans-serif;
+}
+
+@mixin flex-type {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin box-shadow{
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 
