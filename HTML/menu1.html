@@ -4,87 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SASS/main.css">
+    <script src="https://kit.fontawesome.com/021bb316e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../.public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <title>La palette du goût</title>
 </head>
 <body>
-    <header>
+    <header class="hdr__menu">
+        <i class="fas fa-arrow-left"></i>
         <img src="Images_Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
     </header>
     <section>
-        <figure>
-            <img src="Images_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+        <figure class="fig">
+            <img class="fig__img" src="Images_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
             alt="Assiette du restaurant La palette du goût">
         </figure>
 
-        <article>
-            <h1>La palette du goût</h1>
-            <div class="menu">
-                <h2>ENTRÉES</h2>
-                <div class="menu__element">
-                    <h3>Fricassée d'escargot</h3>
-                    <p>Au piment d'Espelette</p>
-                    <p class="menu__element__price">25€</p>
+        <article class="menu">
+            <span class="menu__content">
+                <h1 class="menu__content__tittle">La palette du goût</h1>
+                <i class="far fa-heart"></i>
+            </span>
+            <div class="carte">
+                <h2 class="carte__name">ENTRÉES</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Fricassée d'escargot</h3>
+                    <span class="carte__element__description">
+                        <p>Au piment d'Espelette</p>
+                        <p>25€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Foie gras de canard mi-cuit</h3>
-                    <p>Et ses copeaux de truffe noire</p>
-                    <p class="menu__element__price">35€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Foie gras de canard mi-cuit</h3>
+                    <span class="carte__element__description">
+                        <p>Et ses copeaux de truffe noire</p>
+                        <p>35€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Oeuf au plat</h3>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
-                    <p class="menu__element__price">20€</p>
-                </div>
-            </div>
-            <div class="menu">
-                <h2>PLATS</h2>
-                <div class="menu__element">
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribambelle de légumes</p>
-                    <p class="menu__element__price">40€</p>
-                </div>
-                <div class="menu__element">
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <p>À la truffe noire sur sa purée de panais</p>
-                    <p class="menu__element__price">35€</p>
-                </div>
-                <div class="menu__element">
-                    <h3>Filet de turbot</h3>
-                    <p>Aux agrumes</p>
-                    <p class="menu__element__price">44€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Oeuf au plat</h3>
+                    <span class="carte__element__description">
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                        <p>20€</p>
+                    </span>
                 </div>
             </div>
-            <div class="menu">
-                <h2>DESSERTS</h2>
-                <div class="menu__element">
-                    <h3>Paris-Brest</h3>
-                    <p>Revisité</p>
-                    <p class="menu__element__price">18€</p>
+            <div class="carte">
+                <h2 class="carte__name">PLATS</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Filet de boeuf aux herbes</h3>
+                    <span class="carte__element__description">
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                        <p>40€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Macaron au chocolat d'exception</h3>
-                    <p>Et glace à la vanille de Madagascar</p>
-                    <p class="menu__element__price">22€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Parmentier de queue de boeuf</h3>
+                    <span class="carte__element__description">
+                        <p>À la truffe noire sur sa purée de panais</p>
+                        <p>35€</p>
+                    </span> 
                 </div>
-                <div class="menu__element">
-                    <h3>Mousse au chocolat</h3>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                    <p class="menu__element__price">23€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Filet de turbot</h3>
+                    <span class="carte__element__description">
+                        <p>Aux agrumes</p>
+                        <p>44€</p>
+                    </span>
                 </div>
-                <button class="btn">Commander</button>
             </div>
+            <div class="carte">
+                <h2 class="carte__name">DESSERTS</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Paris-Brest</h3>
+                    <span class="carte__element__description">
+                        <p>Revisité</p>
+                        <p>18€</p>
+                    </span>
+                </div>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Macaron au chocolat d'exception</h3>
+                    <span class="carte__element__description">
+                        <p>Et glace à la vanille de Madagascar</p>
+                        <p>22€</p>
+                    </span>
+                </div>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Mousse au chocolat</h3>
+                    <span class="carte__element__description">
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                        <p>23€</p>
+                    </span>
+                </div>
+            </div>
+            <button class="menu__btn btn">Commander</button>
         </article>
     </section>
-    <footer>
-        <!--Ajouter logos-->
-        <img src="Images_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+    <footer class="footer">
+        <img class="footer__logo" src="Images_Ohmyfood/images/logo/ohmyfood_white.png" 
+        alt="logo ohmyfood">
         <div class="footer__link">
-            <a href="#"><p>Proposer une restaurant</p></a>
-            <a href="#"><p>Devenir partenaire</p></a>
+            <a href="#">
+                <span class="link">
+                    <i class="fas fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+            </span>
+            </a>
+            <a href="#">
+                <span class="link">
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Devenir partenaire</p>
+                </span>
+            </a>
             <a href="#"><p>Mentions légales</p></a>
-            <a href="mail"><p>Contact</p></a>
+            <a href="mailto:#"><p>Contact</p></a>
         </div>
-    </footer> 
+    </footer>
 </body>
 </html>

@@ -4,14 +4,23 @@ $color__primary: #9356DC;
 $color__secondary: #FF79DA;
 $color__tertiary: #99E2D0;
 $color__description: #FFFFFF;
+$color__background: #ececec;
 $color__footer: #282828;
 
 /* typo */
 
+$typo__tittle: "Shrikhand";
 $typo__text: "Roboto";
 
+/* mixin */
+
 @mixin typo {
-    font-family: $typo__text,Arial, Helvetica, sans-serif;
+    font-family: $typo__text, Arial, Helvetica, sans-serif;
+}
+
+@mixin typo__tittle {
+    font-family: $typo__tittle, Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
 
 @mixin flex-type {
@@ -19,8 +28,25 @@ $typo__text: "Roboto";
     flex-direction: column;
 }
 
-@mixin box-shadow{
+@mixin box-shadow {
 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 0 6px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+}
+
+@mixin color-gradiant{
+    background-color: linear-gradiant($color__secondary, $color__primary);
+}
+
+/* function */
+
+@function pastel($clr) {
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 90%;
+    $pastel: hsl($hue, $sat, $light);
+    @return $pastel;
 }
 

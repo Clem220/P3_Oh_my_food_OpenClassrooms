@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/021bb316e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../.public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <title>La note enchantée</title>
 </head>
 <body>
@@ -11,84 +15,114 @@
         <img src="Images_Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
     </header>
     <section>
-        <figure>
-            <img src="Images_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
+        <figure class="fig">
+            <img class="fig__img" src="Images_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
             alt="Assiette du restaurant La note enchantée">
         </figure>
 
-        <article>
-            <h1>La note enchantée</h1>
-            <div class="menu">
-                <h2>ENTRÉES</h2>
-                <div class="menu__element">
-                    <h3>Ravioles de foie gras</h3>
-                    <p>Accompagnés de leu crème à la truffe</p>
-                    <p class="menu__element__price">25€</p>
+        <article class="menu">
+            <h1 class="menu__tittle">La note enchantée</h1>
+            <div class="carte">
+                <h2 class="carte__name">ENTRÉES</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Ravioles de foie gras</h3>
+                    <span class="carte__element__description">
+                        <p>Accompagnés de leu crème à la truffe</p>
+                        <p>25€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Caviar osciètre</h3>
-                    <p>Sur blini à la farine de blé noir</p>
-                    <p class="menu__element__price">35€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Caviar osciètre</h3>
+                    <span class="carte__element__description">
+                        <p>Sur blini à la farine de blé noir</p>
+                        <p>35€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Homard et espuma de potiron</h3>
-                    <p>Mariné aux zestes d'orange</p>
-                    <p class="menu__element__price">20€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Homard et espuma de potiron</h3>
+                    <span class="carte__element__description">
+                        <p>Mariné aux zestes d'orange</p>
+                        <p>20€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Foie gras de canard cuit entier</h3>
-                    <p>Confiture de figue et pain toasté</p>
-                    <p class="menu__element__price">35€</p>
-                </div>
-            </div>
-            <div class="menu">
-                <h2>PLATS</h2>
-                <div class="menu__element">
-                    <h3>Noix de coquilles Saint-Jacques</h3>
-                    <p>Sur lit de purée de céleri-rave</p>
-                    <p class="menu__element__price">40€</p>
-                </div>
-                <div class="menu__element">
-                    <h3>Langoustine poêlée</h3>
-                    <p>Purée de patate douce</p>
-                    <p class="menu__element__price">35€</p>
-                </div>
-                <div class="menu__element">
-                    <h3>Mijotée de queue de boeuf</h3>
-                    <p>Et riz sauvage aux zestes</p>
-                    <p class="menu__element__price">44€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Foie gras de canard cuit entier</h3>
+                    <span class="carte__element__description">
+                        <p>Confiture de figue et pain toasté</p>
+                        <p>35€</p>
+                    </span>
                 </div>
             </div>
-            <div class="menu">
-                <h2>DESSERTS</h2>
-                <div class="menu__element">
-                    <h3>Macaron noisette et chocolat</h3>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                    <p class="menu__element__price">18€</p>
+            <div class="carte">
+                <h2 class="carte__name">PLATS</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Noix de coquilles Saint-Jacques</h3>
+                    <span class="carte__element__description">
+                        <p>Sur lit de purée de céleri-rave</p>
+                        <p>40€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Baba au rhum revisité</h3>
-                    <p>Avec son coulis de citron</p>
-                    <p class="menu__element__price">22€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Langoustine poêlée</h3>
+                    <span class="carte__element__description">
+                        <p>Purée de patate douce</p>
+                        <p>35€</p>
+                    </span>
                 </div>
-                <div class="menu__element">
-                    <h3>Tarte au citron meringuée</h3>
-                    <p>Destructurée</p>
-                    <p class="menu__element__price">23€</p>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Mijotée de queue de boeuf</h3>
+                    <span class="carte__element__description">
+                        <p>Et riz sauvage aux zestes</p>
+                        <p>44€</p>
+                    </span>
+                </div>
+            </div>
+            <div class="carte">
+                <h2 class="carte__name">DESSERTS</h2>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Macaron noisette et chocolat</h3>
+                    <span class="carte__element__description">
+                        <p>Glace au caramel brun et sel de Guérande</p>
+                        <p>18€</p>
+                    </span>
+                </div>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Baba au rhum revisité</h3>
+                    <span class="carte__element__description">
+                        <p>Avec son coulis de citron</p>
+                        <p>22€</p>
+                    </span>
+                </div>
+                <div class="carte__element">
+                    <h3 class="carte__element__tittle">Tarte au citron meringuée</h3>
+                    <span class="carte__element__description">
+                        <p>Destructurée</p>
+                        <p>23€</p>
+                    </span>
                 </div>
                 <button class="btn">Commander</button>
             </div>
         </article>
     </section>
-    <footer>
-        <!--Ajouter logos-->
-        <img src="Images_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+    <footer class="footer">
+        <img class="footer__logo" src="Images_Ohmyfood/images/logo/ohmyfood_white.png" 
+        alt="logo ohmyfood">
         <div class="footer__link">
-            <a href="#"><p>Proposer une restaurant</p></a>
-            <a href="#"><p>Devenir partenaire</p></a>
+            <a href="#">
+                <span class="link">
+                    <i class="fas fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+            </span>
+            </a>
+            <a href="#">
+                <span class="link">
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Devenir partenaire</p>
+                </span>
+            </a>
             <a href="#"><p>Mentions légales</p></a>
-            <a href="mail"><p>Contact</p></a>
+            <a href="mailto:#"><p>Contact</p></a>
         </div>
-    </footer> 
+    </footer>
 </body>
 </html>
