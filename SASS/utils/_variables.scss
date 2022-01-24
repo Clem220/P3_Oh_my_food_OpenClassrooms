@@ -36,10 +36,6 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     box-shadow: 0 6px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
 }
 
-@mixin color-gradiant{
-    background-color: linear-gradiant($color__secondary, $color__primary);
-}
-
 /* function */
 
 @function pastel($clr) {
@@ -49,4 +45,6 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     $pastel: hsl($hue, $sat, $light);
     @return $pastel;
 }
+
+
 
