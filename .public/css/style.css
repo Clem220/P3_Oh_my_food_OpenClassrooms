@@ -132,11 +132,11 @@ a {
 .description {
   display: flex;
   padding: 0% 5%;
+  justify-content: space-between;
 }
 .description__text {
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 .description__text__name {
   margin-bottom: 0px;
@@ -145,7 +145,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: right;
-  width: 50%;
   font-size: 30px;
 }
 
@@ -299,30 +298,23 @@ a {
   transition: opacity 250ms;
 }
 
-.heart__H1 {
-  opacity: 1;
+.heart {
+  cursor: pointer;
 }
-.heart__H2 {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  top: 30px;
-  background-clip: text;
+
+.heart input[type=checkbox], .heart .heart__checkbox__checked {
+  display: none;
+}
+
+.heart input[type=checkbox]:checked ~ .heart__checkbox__checked {
+  display: inline-block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  opacity: 0;
 }
-.heart:hover .heart__H1 {
-  content: "";
-  opacity: 0;
-  transition: 0.3 ease-in-out;
-}
-.heart:hover .heart__H2 {
-  content: "";
-  opacity: 1;
-  transition: 0.3 ease-in-out;
+
+.heart input[type=checkbox]:checked ~ .heart__checkbox__unchecked {
+  display: none;
 }
 
 .footer {
@@ -345,8 +337,14 @@ a {
   flex-direction: row;
   align-items: center;
 }
-.link i {
+
+.fa-utensils {
   padding: 0px 10px 0px 0px;
+}
+
+.fa-hands-helping {
+  font-size: 14px;
+  padding: 0px 9px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
