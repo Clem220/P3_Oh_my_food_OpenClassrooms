@@ -57,8 +57,10 @@
         align-self: center;
         justify-content: center;
         align-items: center;
-        margin: 0 4% 4%;
-
+        margin: 0 0 20px;
+        @media (min-width: 772px) and (max-width: 992px){
+            margin: 0 0 30px;
+        }
     }
 }
 /** animation carte **/
@@ -96,8 +98,14 @@
     }
     &__name{
         padding: 0px 20px;
+        margin: 0px 20px 0px 0px;
         @media (min-width: 770px) and (max-width: 992px){
             align-self: flex-start;
+        }
+        &__line{
+            border: 2px solid $color__tertiary;
+            width: 50px;
+            margin-left: 20px;
         }
     }
     &__element{
