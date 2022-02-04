@@ -1,0 +1,61 @@
+@import ".././utils/mixins";
+
+/** bouton **/
+
+.btn{
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background: linear-gradient(#FF79DA, #9356DC);
+    @include box-shadow;
+    z-index: 1;
+        &:active{
+            &::after{
+                opacity: 1;
+            }
+        }
+    &::after{
+        content: "";
+        position: absolute;
+        border-radius: 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(#9356DC, #ae80e5);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms; 
+    }
+}
+
+/** checkbox-heart **/
+
+.heart{
+    cursor: pointer;
+}
+.heart input[type="checkbox"], .heart .heart__checkbox__checked{
+    display: none;
+}
+.heart input[type="checkbox"]:checked ~ .heart__checkbox__checked{
+    @include checkbox-checked
+}
+.heart input[type="checkbox"]:checked ~ .heart__checkbox__unchecked{
+    display: none;
+}
+
+body{
+    margin: 0px;
+    @include typo;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

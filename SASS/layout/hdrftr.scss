@@ -1,0 +1,48 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/keyframes";
+
+/** header **/
+
+.header{
+    @include flex-type-column;
+    &__content{
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 4px #636363cc;
+        z-index: 2;
+        width: 100%;
+        &__logo{
+            object-fit: cover;
+            padding: 2% 0%;
+        }
+    }     
+}
+
+/** footer **/
+
+.footer{
+    background-color: $color__footer;
+    padding: 4%;
+    &__link{
+        @include flex-type-column;
+        a{
+            color: #FFFFFF;
+        }
+    }
+    &__logo{
+        object-fit: cover;
+    }
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-utensils {
+    padding: 0px 10px 0px 0px;
+  }
+.fa-hands-helping {
+    font-size: 14px;
+    padding: 0px 9px 0px 0px;
+  }

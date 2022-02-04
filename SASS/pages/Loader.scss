@@ -1,0 +1,83 @@
+  /** loader **/ 
+
+  .loader{
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.2s 3s forwards;
+}
+
+.loading {
+    font-size: 44px;
+    font-family: $typo__tittle, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    @media (min-width:770px) and (max-width: 992px){
+        font-size: 64px;
+    }
+    @media (min-width: 993px){
+        font-size: 84px;
+    }
+    span {
+      display: inline-block;
+      margin: 0 -.05em;
+    }
+    &__primary{
+        position: relative;
+        color: $color__primary;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: attr(data-text);
+            color: pastel($color__primary);
+            opacity: 0;
+            transform: rotateY(-90deg);
+            animation: loading06 4s infinite;
+        }
+    }
+    &__secondary{
+        position: relative;
+        color: $color__secondary;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: attr(data-text);
+            color: pastel($color__secondary);
+            opacity: 0;
+            transform: rotateY(-90deg);
+            animation: loading06 4s infinite;
+        }
+    }
+    &__tertiary{
+        position: relative;
+        color: $color__tertiary;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: attr(data-text);
+            color: pastel($color__tertiary);
+            opacity: 0;
+            transform: rotateY(-90deg);
+            animation: loading06 4s infinite;
+        }
+    }
+}
+ 
+.loading__anim {
+    span {
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i+1})::after {
+          animation-delay: #{$i*.2}s;
+        }
+      }
+    }
+}

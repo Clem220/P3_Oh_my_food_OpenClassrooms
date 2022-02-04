@@ -1,0 +1,52 @@
+/** mixin typo **/
+
+@mixin typo {
+    font-family: $typo__text, Arial, Helvetica, sans-serif;
+}
+@mixin typo__tittle {
+    font-family: $typo__tittle, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+@mixin text-overflow{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/** mixin flex-type **/
+
+@mixin flex-type-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-type-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/** mixin box-shadow **/
+
+@mixin box-shadow {
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+@mixin box-shadow-hover {
+    box-shadow: 0 6px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+}
+
+/** mixin checkbox **/
+
+@mixin checkbox-checked {
+    display: inline-block;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* function */
+
+@function pastel($clr) {
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 90%;
+    $pastel: hsl($hue, $sat, $light);
+    @return $pastel;
+}
