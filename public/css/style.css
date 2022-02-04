@@ -393,7 +393,7 @@ a {
 }
 .function__element__logo {
   padding-right: 10px;
-  color: black;
+  color: #808080;
   transition: color 600ms ease-in-out;
 }
 @media (min-width: 770px) and (max-width: 992px) {
