@@ -12,3 +12,13 @@ $color__footer: #282828;
 
 $typo__tittle: "Shrikhand";
 $typo__text: "Roboto";
+
+/* map */
+
+$breakpoint: (
+    mobile: 771px,
+    tab-min: 772px,
+    tab-max: 992px,
+    desktop-min: 993px,
+    tab-desktop: 772px
+)

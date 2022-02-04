@@ -58,7 +58,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 0 20px;
-        @media (min-width: 772px) and (max-width: 992px){
+        @include tablette{
             margin: 0 0 30px;
         }
     }
@@ -84,13 +84,12 @@
 }
 
 .carte{
-    display: flex;
-    flex-direction: column;
+    @include flex-type-column;
     width: 100%;
     animation: slideup 1s forwards;
     opacity: 0;
     &-container{
-        @media (min-width: 993px){
+        @include desktop{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -99,7 +98,7 @@
     &__name{
         padding: 0px 20px;
         margin: 0px 20px 0px 0px;
-        @media (min-width: 770px) and (max-width: 992px){
+        @include tablette{
             align-self: flex-start;
         }
         &__line{
@@ -117,25 +116,24 @@
         background-color: #FFFFFF;
         overflow: hidden;
         position: relative;
-        @media (min-width:770px) and (max-width: 992px){
+        @include tablette{
             width: 250px;
             height: 150px;
         }
-        @media (min-width: 993px){
+        @include desktop{
             height: 100px;
         }
         &__container{
             margin: 10px 20px;
             display: contents;
-            @media (min-width: 770px) and (max-width: 992px){
+            @include tablette{
                 @include flex-type-row;
                 justify-content: center;
             }
         }
         &__description{
             width: calc(100% - 50px);
-            display: flex;
-            flex-direction: column;
+            @include flex-type-column;
             justify-content: space-evenly;
             padding: 10px 0px 10px 20px;
             &__tittle{
@@ -145,7 +143,7 @@
             &__trimming{ 
                 margin: 0;
                 @include text-overflow;
-                @media (min-width: 770px) and (max-width: 992px){
+                @include tablette{
                 align-items: center;
                 width: 100%;
                 margin: 0;
@@ -177,13 +175,13 @@
                 width: auto;
             }
             &__trimming{
-                @media (min-width: 770px) and (max-width: 992px){
+                @include tablette{
                 width: auto;
                 }
             }
             &__price{
                 transition: transform 0.5s ease-in-out;
-                @media (min-width: 770px) and (max-width: 992px){
+                @include tablette{
                     transform: translateX(10px);
                 }
             }
@@ -200,10 +198,10 @@
             background-color: $color__tertiary;
             transform-origin: right 50px;
             transform: translateX(60px);
-            @media (min-width: 770px) and (max-width: 992px){
+            @include tablette{
                 height: 150px;
             }
-            @media (min-width: 993px) {
+            @include desktop{
                 height: 100px;
             }
             i{

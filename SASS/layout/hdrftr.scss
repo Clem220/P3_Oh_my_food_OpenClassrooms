@@ -15,7 +15,7 @@
         &__logo{
             object-fit: cover;
             padding: 2% 0%;
-            @media (max-width: 771px) {
+            @include mobile {
                 height: 45px; 
             } 
         }

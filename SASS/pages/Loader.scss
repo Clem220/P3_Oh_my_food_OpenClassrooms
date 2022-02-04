@@ -18,10 +18,10 @@
     font-family: $typo__tittle, sans-serif;
     font-weight: 800;
     text-align: center;
-    @media (min-width:770px) and (max-width: 992px){
+    @include tablette{
         font-size: 64px;
     }
-    @media (min-width: 993px){
+    @include desktop{
         font-size: 84px;
     }
     span {

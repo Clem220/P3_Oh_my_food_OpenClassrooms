@@ -2,10 +2,16 @@
 /** variables **/
 /* colors */
 /* typo */
+/* map */
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** carte **/
 @keyframes slideup {
@@ -38,10 +44,15 @@
     visibility: hidden;
   }
 }
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** bouton **/
 .btn {
@@ -109,10 +120,16 @@ a {
 /** variables **/
 /* colors */
 /* typo */
+/* map */
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** carte **/
 @keyframes slideup {
@@ -219,7 +236,7 @@ a {
   font-weight: 800;
   text-align: center;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .loading {
     font-size: 64px;
   }
@@ -356,10 +373,7 @@ a {
     width: 50%;
   }
 }
-.function__element-size {
-  margin: 0px 20px;
-}
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .function__element-size {
     display: flex;
     flex-direction: row;
@@ -384,10 +398,10 @@ a {
   border-radius: 25px 25px;
   padding: 2% 10% 2% 5%;
   transition: all 600ms ease-in-out;
-  margin: 20px 0px;
+  margin: 20px 20px;
   position: relative;
 }
-@media (min-width: 770px) {
+@media (min-width: 772px) {
   .function__element {
     padding: 2% 5% 2% 5%;
     margin: 20px 20px;
@@ -403,7 +417,7 @@ a {
   color: #808080;
   transition: color 600ms ease-in-out;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .function__element__logo {
     padding-right: 20px;
   }
@@ -446,7 +460,7 @@ a {
   display: contents;
   justify-content: center;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .restaurant__container {
     display: flex;
     flex-direction: row;
@@ -462,9 +476,9 @@ a {
 .restaurant__tittle {
   display: flex;
   align-self: flex-start;
-  margin: 4%;
+  margin: 20px 20px 5px 20px;
 }
-@media (min-width: 770px) {
+@media (min-width: 772px) {
   .restaurant__tittle {
     margin: 2% 2% 0% 2%;
   }
@@ -479,7 +493,7 @@ a {
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .restaurant__element {
     width: 42%;
   }
@@ -534,10 +548,16 @@ a {
 /** variables **/
 /* colors */
 /* typo */
+/* map */
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** carte **/
 @keyframes slideup {
@@ -570,10 +590,15 @@ a {
     visibility: hidden;
   }
 }
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** bouton **/
 .btn {
@@ -641,10 +666,16 @@ a {
 /** variables **/
 /* colors */
 /* typo */
+/* map */
+/** variables **/
+/* colors */
+/* typo */
+/* map */
 /** mixin typo **/
 /** mixin flex-type **/
 /** mixin box-shadow **/
 /** mixin checkbox **/
+/* mixin mediaqueries */
 /* function */
 /** carte **/
 @keyframes slideup {
@@ -828,7 +859,7 @@ a {
   padding: 0px 20px;
   margin: 0px 20px 0px 0px;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__name {
     align-self: flex-start;
   }
@@ -849,7 +880,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element {
     width: 250px;
     height: 150px;
@@ -864,7 +895,7 @@ a {
   margin: 10px 20px;
   display: contents;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element__container {
     display: flex;
     flex-direction: row;
@@ -888,7 +919,7 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element__description__trimming {
     align-items: center;
     width: 100%;
@@ -920,7 +951,7 @@ a {
   margin: 0;
   width: auto;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element:hover .carte__element__description__trimming {
     width: auto;
   }
@@ -928,7 +959,7 @@ a {
 .carte__element:hover .carte__element__description__price {
   transition: transform 0.5s ease-in-out;
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element:hover .carte__element__description__price {
     transform: translateX(10px);
   }
@@ -946,7 +977,7 @@ a {
   transform-origin: right 50px;
   transform: translateX(60px);
 }
-@media (min-width: 770px) and (max-width: 992px) {
+@media (min-width: 772px) and (max-width: 992px) {
   .carte__element__check {
     height: 150px;
   }

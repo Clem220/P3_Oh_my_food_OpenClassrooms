@@ -32,10 +32,9 @@
 }
 
 .desktop-container{
-    display: flex;
-    flex-direction: column;
+   @include flex-type-column;
     margin: 20px;
-    @media (min-width: 993px){
+    @include desktop{
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -47,7 +46,7 @@
     @include flex-type-column;
     align-items: center;
     text-align: center;
-    @media (min-width:993px){
+    @include desktop{
     width: 50%;
     justify-content: space-around;
     }
@@ -55,17 +54,15 @@
 
 .function{
     @include flex-type-column;
-    @media (min-width:993px){
+    @include desktop{
     width: 50%;
     }
     &__element-size{
-        margin: 0px 20px;
-    @media (min-width: 770px) and (max-width: 992px){
+    @include tablette{
         @include flex-type-row;
     }
-    @media (min-width:993px){
-        display: flex;
-        flex-direction: column;
+    @include desktop{
+        @include flex-type-column;
     }
 }
     &__tittle{
@@ -81,20 +78,20 @@
         border-radius: 25px 25px;
         padding: 2% 10% 2% 5%;
         transition: all 600ms ease-in-out;
-        margin: 20px 0px;
+        margin: 20px 20px;
         position: relative;
-        @media (min-width: 770px){
+        @include desktop-tab{
             padding: 2% 5% 2% 5%;
             margin: 20px 20px;
         }
-        @media (min-width:993px){
+        @include desktop{
             width: auto;
         }
         &__logo{
             padding-right: 10px;
             color: #808080;
             transition: color 600ms ease-in-out;
-            @media (min-width: 770px) and (max-width: 992px){
+            @include tablette{
                 padding-right: 20px;
             }
         }
@@ -133,19 +130,19 @@
     &__container{
         display: contents;
         justify-content: center;
-        @media (min-width: 770px) and (max-width: 992px){
+        @include tablette{
             @include flex-type-row;
             flex-wrap: wrap;
         }
-        @media (min-width: 993px){
+        @include desktop{
             @include flex-type-row;
         }
     }
         &__tittle{
             display: flex;
             align-self: flex-start;
-            margin: 4%;
-            @media (min-width: 770px){
+            margin: 20px 20px 5px 20px;
+            @include desktop-tab{
             margin: 2% 2% 0% 2%;
             }
         }
@@ -157,23 +154,23 @@
             background-color: #FFFFFF;
             position: relative;
             @include box-shadow;
-        @media (min-width: 770px) and (max-width: 992px){
+        @include tablette{
             width: calc(50% - 8%);
         }
-        @media (min-width: 993px){
+        @include desktop{
             width:25%;
         }
         &__new{
             position: absolute;
             right: 15px;
             top: 15px;
-            background: #99E2D0;
+            background: $color__tertiary;
             border-radius: 2px;
         &__text{
             display: block;
             font-size: 0.9rem;
             text-align: center;
-            color: #278870;
+            color: darken($color: $color__tertiary, $amount: 40);
             padding: 8px;
         }
     }
