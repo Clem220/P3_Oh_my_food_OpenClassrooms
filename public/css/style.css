@@ -879,6 +879,8 @@ a {
   background-color: #FFFFFF;
   overflow: hidden;
   position: relative;
+  /** checkbox carte **/
+  /** fin checkbox **/
 }
 @media (min-width: 772px) and (max-width: 992px) {
   .carte__element {
@@ -890,6 +892,60 @@ a {
   .carte__element {
     height: 100px;
   }
+}
+.carte__element input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.carte__element input:checked ~ .carte__element__check {
+  transition: 0.5s ease-in-out;
+  transform: translateX(0px);
+}
+.carte__element input:checked ~ .carte__element__check i {
+  transform: rotate(-1turn);
+  transition: 0.5s ease-in-out;
+}
+.carte__element input ~ .carte__element__check {
+  transition: 0.5s ease-in-out;
+  transform: translateX(60px);
+}
+.carte__element input ~ .carte__element__check i {
+  transform: rotate(-1turn);
+  transition: 0.5s ease-in-out;
+}
+.carte__element input:checked ~ .carte__element__description {
+  width: calc(100% - 130px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+.carte__element input:checked ~ .carte__element__description__tittle {
+  margin: 0;
+  width: auto;
+}
+@media (min-width: 772px) and (max-width: 992px) {
+  .carte__element input:checked ~ .carte__element__description__trimming {
+    width: auto;
+  }
+}
+.carte__element input:checked ~ .carte__element__description__price {
+  transition: transform 0.5s ease-in-out;
+}
+@media (min-width: 772px) and (max-width: 992px) {
+  .carte__element input:checked ~ .carte__element__description__price {
+    transform: translateX(10px);
+  }
+}
+.carte__element input ~ .carte__element__description {
+  transition: all 0.5s ease-in-out;
 }
 .carte__element__container {
   margin: 10px 20px;
@@ -931,38 +987,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.carte__element:hover .carte__element__check {
-  transition: 0.5s ease-in-out;
-  transform: translateX(0px);
-}
-.carte__element:hover .carte__element__check i {
-  transform: rotate(-1turn);
-  transition: 0.5s ease-in-out;
-}
-.carte__element:hover .carte__element__description {
-  width: calc(100% - 130px);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: all 0.5s ease-in-out;
-}
-.carte__element:hover .carte__element__description__tittle {
-  margin: 0;
-  width: auto;
-}
-@media (min-width: 772px) and (max-width: 992px) {
-  .carte__element:hover .carte__element__description__trimming {
-    width: auto;
-  }
-}
-.carte__element:hover .carte__element__description__price {
-  transition: transform 0.5s ease-in-out;
-}
-@media (min-width: 772px) and (max-width: 992px) {
-  .carte__element:hover .carte__element__description__price {
-    transform: translateX(10px);
-  }
 }
 .carte__element__check {
   display: flex;

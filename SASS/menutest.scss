@@ -1,10 +1,10 @@
 /* page menuX.html */
 
-@import ".././utils/variables";
-@import ".././utils/mixins";
-@import ".././utils/keyframes";
-@import ".././composants/btnchck.scss";
-@import ".././layout/hdrftr.scss";
+@import ".././SASS/utils/variables";
+@import ".././SASS/utils/mixins";
+@import ".././SASS/utils/keyframes";
+@import ".././SASS/composants/btnchck.scss";
+@import ".././SASS/layout/hdrftr.scss";
 
 .hdr__menu{
     display: flex;
@@ -83,6 +83,51 @@
     }
 }
 
+.carte__element input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        appearance: none;
+        -webkit-appearance: none;
+}
+
+.carte__element input:checked ~ .carte__element__check{
+    transition: 0.5s ease-in-out;
+            transform: translateX(0px);
+            i{
+                transform: rotate(-1turn);
+                transition: 0.5s ease-in-out;
+            }
+}
+
+.carte__element input:checked .carte__element__description{
+    width: calc(100% - 130px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.5s ease-in-out;
+    &__tittle{
+        margin: 0;
+        width: auto;
+    }
+    &__trimming{
+        @include tablette{
+        width: auto;
+        }
+    }
+    &__price{
+        transition: transform 0.5s ease-in-out;
+        @include tablette{
+            transform: translateX(10px);
+        }
+    }
+}
+
+
 .carte{
     @include flex-type-column;
     width: 100%;
@@ -123,60 +168,6 @@
         @include desktop{
             height: 100px;
         }
-        /** checkbox carte **/
-        & input{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        z-index: 2;
-        appearance: none;
-        -webkit-appearance: none;
-        }
-        & input:checked ~ .carte__element__check{
-            transition: 0.5s ease-in-out;
-                    transform: translateX(0px);
-                    i{
-                        transform: rotate(-1turn);
-                        transition: 0.5s ease-in-out;
-                    }
-        }
-        & input ~ .carte__element__check{
-            transition: 0.5s ease-in-out;
-                    transform: translateX(60px);
-                    i{
-                        transform: rotate(-1turn);
-                        transition: 0.5s ease-in-out;
-                    }
-        }
-        & input:checked ~ .carte__element__description{
-            width: calc(100% - 130px);
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            transition: all 0.5s ease-in-out;
-            &__tittle{
-                margin: 0;
-                width: auto;
-            }
-            &__trimming{
-                @include tablette{
-                width: auto;
-                }
-            }
-            &__price{
-                transition: transform 0.5s ease-in-out;
-                @include tablette{
-                    transform: translateX(10px);
-                }
-            }
-        }
-        & input ~ .carte__element__description{  
-            transition: all 0.5s ease-in-out; 
-        }
-        /** fin checkbox **/
         &__container{
             margin: 10px 20px;
             display: contents;
@@ -209,7 +200,8 @@
                 align-items: center;
                 justify-content: center;
             }
-        }     
+        }
+        
         &__check{
             display: flex;
             align-items: center;
