@@ -42,6 +42,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    &__logo{
+        width: 25px;
+    }
 }
 .fa-utensils {
     padding: 0px 10px 0px 0px;

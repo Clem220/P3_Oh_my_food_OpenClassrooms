@@ -206,6 +206,9 @@ a {
   flex-direction: row;
   align-items: center;
 }
+.link__logo {
+  width: 25px;
+}
 
 .fa-utensils {
   padding: 0px 10px 0px 0px;
@@ -752,6 +755,9 @@ a {
   flex-direction: row;
   align-items: center;
 }
+.link__logo {
+  width: 25px;
+}
 
 .fa-utensils {
   padding: 0px 10px 0px 0px;
@@ -917,7 +923,7 @@ a {
   transform: translateX(60px);
 }
 .carte__element input ~ .carte__element__check i {
-  transform: rotate(-1turn);
+  transform: rotate(0turn);
   transition: 0.5s ease-in-out;
 }
 .carte__element input:checked ~ .carte__element__description {
