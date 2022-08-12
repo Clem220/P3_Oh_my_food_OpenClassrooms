@@ -1,7 +1,7 @@
 # ClementVermeulen_3_13012022
 Projet 3 OpenClassrooms
 
-Lien vers le site : https://clem220.github.io/P3_Oh_my_food_OpenClassrooms/index.html
+Lien vers le site : https://clem220.github.io/P3_Oh_my_food_OpenClassrooms/HTML/index.html
 
 Rappel du projet :
 
